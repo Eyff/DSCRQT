@@ -1,69 +1,61 @@
-# DSCRQT – Axioms on Ontological Structure of Existence
-
-## Purpose
-This document contains an axiom-based framework to describe the logic of existence that underlies the theory DSCRQT (Dual State Complex Realisation Quantum Theory). It formalizes the distinction between **concrete states** and their **ontological realisation status**.
+**Document: DSCRQT – Dual State Complex Realisation Qunatum Theory or Dynamic Structured Configuration and Realization Quantum Theory**
 
 ---
 
-## Axiomatic Structure
+### Part 1: Axiom Overview Table
 
-### 🔹 A1 – Meta-States
-There exist exactly two ontological meta-states:
-
-\[ \text{META} = \{\text{Exists}, \text{Does-Not-Exist}\} \]
-
-These are disjoint and exhaustive. They do not describe the content of a state, but its assignment in terms of reality.
-
----
-
-### 🔹 A2 – Definition of a State
-A state is a concrete, distinguishable, and potentially measurable entity of description:
-
-\[ \text{STATE} = \{S_1, S_2, \ldots, S_n\} \]
-
-Such states may include:
-- classical quantities (e.g., position, momentum)
-- quantum eigenstates (e.g., spin-up, spin-down)
-- qualitative conditions (e.g., being ice, being water)
-
-The concept of a state remains flexible, as long as Axiom A3 remains applicable.
+| No. | Axiom Title | Definition |
+|-----|-------------|------------|
+| 0   | State vs. Configuration | A state is a quantitatively or observably distinguishable property of an element. A configuration is the structured arrangement of system elements. |
+| 1   | Continuity of State Change | States change continuously unless an external discontinuity acts. |
+| 2   | Discrete Configuration Transitions | Configurations change discretely along defined transition paths. |
+| 3   | System Elements and Model Termination | System elements are either atomic or recursive. Model depth is finite. |
+| 4   | Existence of States and Configurations | States always exist. Configurations either exist or do not exist. |
+| 5   | Realization of Configurations | Configurations are either realized and effective, or not realized. |
+| 6   | Actuality and Potentiality | Realized configurations exist in the mode of actuality; non-realized (but structured) configurations exist in the mode of potentiality. |
 
 ---
 
-### 🔹 A3 – Ontological Assignment
-Every state belongs **either** to the meta-state "Exists" **or** to "Does-Not-Exist".
+### Part 2: Predicate Logic Formulation of Each Axiom
 
-\[
-\forall S \in \text{STATE}:\quad (S \in \text{Exists}) \lor (S \in \text{Does-Not-Exist}) \quad \land \quad \neg((S \in \text{Exists}) \land (S \in \text{Does-Not-Exist}))
-\]
+**Axiom 0:**
+- \( \forall x (State(x) \rightarrow Property(x) \land \neg Structure(x)) \land \forall y (Configuration(y) \rightarrow Structure(y) \land Arrangement(Subset(y))) \)
 
-This is the formal representation of the Aristotelian law of the excluded middle, applied to state ontology.
+**Axiom 1:**
+- \( \forall z (State(z) \land \neg Interaction(z) \rightarrow continuous(z)) \)
 
----
+**Axiom 2:**
+- \( \forall c_1, c_2 (Configuration(c_1) \land Configuration(c_2) \land Transition(c_1, c_2) \rightarrow discrete(Transition(c_1, c_2))) \)
 
-### 🔹 A4 – Realisation and Non-Realisation
-To distinguish the semantics of existence more precisely, we introduce the distinction between realisation and non-realisation based on interaction with the environment:
+**Axiom 3:**
+- \( \forall e (Element(e) \rightarrow Object(e) \lor System(e)) \land \exists d (Depth(System) = d \land finite(d)) \)
 
-- **Realised:**  
-  A state is realised if it belongs to the meta-state "Exists" **and interacts with the environment**. It produces causal effect, observable change, or measurable outcome. It is thus active within the universe.
+**Axiom 4:**
+- \( \forall s (State(s) \rightarrow Exists(s)) \land \forall c (Configuration(c) \rightarrow Exists(c) \lor \neg Exists(c)) \)
 
-- **Not Realised (potential):**  
-  A state is not realised if it belongs to the meta-state "Does-Not-Exist" or—despite existing—**does not interact with the environment**. It is effectively hidden from the universe and has no causal footprint.
+**Axiom 5:**
+- \( \forall c (Configuration(c) \rightarrow (Realized(c) \leftrightarrow (Exists(c) \land Interacts(c)))) \)
 
-Formalisation:
-
-\[
-\text{Realised}(S) \Leftrightarrow S \in \text{Exists} \land \text{Interacts}(S)
-\]
-\[
-\text{Not-Realised}(S) \Leftrightarrow S \in \text{Does-Not-Exist} \lor \neg\text{Interacts}(S)
-\]
+**Axiom 6:**
+- \( \forall c (Configuration(c) \land Realized(c) \rightarrow Mode(c, Actuality)) \land (\neg Realized(c) \land Structurable(c) \rightarrow Mode(c, Potentiality)) \)
 
 ---
 
-## Future Expansion
-This axiom set is the **first version** of an ontological framework for DSCRQT. Further axioms may be added to cover dynamics, temporality, observation and mathematical formalism. Future directions include:
+### Part 3: Paradox Test Cases
 
-- A5: Temporal dependency (existence over time)
-- A6: Observation and measurement as criteria for realisation
-- A7: Coupling to state vectors in complex vector space (e.g., via projections, norm, phase)
+| Paradox | Everyday Interpretation | kQP (classical) | DSCRQT (AQP) |
+|---------|-------------------------|------------------|----------------|
+| Schrödinger's Cat | "Undecided: dead or alive?" | Superposition until measurement | State structure exists, but configuration is not realized (Potentiality) until transition through interaction |
+| Tree falls in forest with no witness | "Was it heard?" | No clear assertion | Movement state exists; configuration is realized if interaction occurred (e.g., ground vibration) |
+| State without observer | "No reality without observation?" | No wavefunction without collapse | States always exist; observation is not metaphysical but a configuration transition |
+
+---
+
+### Endnote
+
+The DSCRQT model allows a differentiated ontological treatment of quantum-like processes without mystifying the observer and without maintaining classical paradox theater.
+
+It relies on complex state representation, structural configurations, relational transitions, and the Aristotelian distinction between act and potency (Actuality vs. Potentiality).
+
+**END**
+
